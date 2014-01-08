@@ -1,13 +1,14 @@
 <template name="editor">
   <div class="row">
     <div class="span10">
-      <input class="xlarge span10 input-title" type="text" placeholder="Your Article's Title" />
-      <textarea class="field span10 notepad" rows="8" id="inputpad"></textarea>
+      <input type="hidden" name="_id" id="_id" value="{{article._id}}" />
+      <input class="xlarge span10 input-title" type="text" placeholder="Your Article's Title" id="titlepad" value="{{article._id}}" />
+      <textarea class="field span10 notepad" rows="8" id="inputpad">{{article.body}}</textarea>
     </div>    
     <div class="span2">      
-      <button class="btn btn-large pull-right">Save</button>
+      <button class="btn btn-large pull-right save">Save</button>
       <br/><br/><br/>
-      <button class="btn btn-primary btn-large pull-right">Publish</button>
+      <button class="btn btn-primary btn-large pull-right publish">Publish</button>
       <br/><br/><br/>
       <a class="pull-right" href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown help</a>
     </div>

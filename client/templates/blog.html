@@ -1,0 +1,16 @@
+<template name="blog">
+  <div class="row">
+    <div class="span12">
+      {{#each articles}}
+      <div class="row article">
+	<div class="span12">
+	  <h2>{{article.title}}</h2>
+	  <div class="article-body">
+	    {{mdtoHTML article.body}}
+	  </div>
+	</div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</template>
