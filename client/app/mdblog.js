@@ -1,4 +1,5 @@
 
+
 Template.editor.rendered = function() {
     Meteor.setInterval(
 	Template.editor.updatePad, 

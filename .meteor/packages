@@ -10,3 +10,5 @@ preserve-inputs
 jquery
 bootstrap
 stylus
+accounts-ui
+accounts-password
