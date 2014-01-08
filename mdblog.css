@@ -1,1 +1,6 @@
 /* CSS declarations go here */
+
+.preview {
+    width: 500px;
+    overflow: scroll;
+}

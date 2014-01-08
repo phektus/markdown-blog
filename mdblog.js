@@ -1,5 +1,9 @@
 if (Meteor.isClient) {
   Template.editor.events({
+    'keypress textarea' : function () {
+	var raw = $('textarea#inputpad').val();
+	$('#outputpad').html(raw);
+    }
   });
 }
 
